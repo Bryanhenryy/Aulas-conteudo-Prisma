@@ -1,17 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Theme Changer</title>
+    <title>Dark Mode com LocalStorage</title>
     <link rel="stylesheet" href="alternadordetema.css">
 </head>
 <body>
-    <main>
-        <h1>Bem vindo à página</h1>
-        <p>Como colocar o modo escuro</p>
-        <button id="botao">Alternar Tema</button>
-    </main>
-<script src="alternadordetema.js"></script>
+    <div class="container">
+        <header>
+            <h1>Meu Site</h1>
+            <label class="switch">
+                <input type="checkbox" id="dark-mode-toggle">
+                <span class="slider"></span>
+            </label>
+        </header>
+        <main>
+            <h2>Bem-vindo!</h2>
+            <p>Exemplo simples de alternancia de tema</p>
+        </main>
+    </div>
+
+    <script src="alternadordetema.js"></script>
 </body>
 </html>

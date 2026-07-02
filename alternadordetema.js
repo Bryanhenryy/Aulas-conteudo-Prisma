@@ -1,14 +1,14 @@
-let botao = document.getElementById("button")
-let body = document.body;
-
-let DarkMode = localStorage.getItem("dark-mode") === 'true';
-
-if(DarkMode){
+const toggleButton = document.getElementById('dark-mode-toggle');
+const body = document.body;
+if (localStorage.getItem('theme') === 'dark') {
     body.classList.add('dark-mode');
+    toggleButton.checked = true; // Mantém o checkbox checado
 }
-
-botao.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-let escuro = body.classList.contains('dark-mode');
-localStorage.setItem('dark-mode', escuro); 
+toggleButton.addEventListener('change', () => {
+    body.classList.toggle('dark-mode');    
+    if (body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 });
