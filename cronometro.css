@@ -1,0 +1,25 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin: 0;
+    background-color: #f0f2f5;
+}
+h1{
+   font-size: 45px;
+}
+button{
+    cursor: pointer;
+    font-size: 16px;
+    border: grey solid ;
+}
+#iniciar { background-color: #4caf50; color: white; }
+#iniciar:hover { background-color: #45a049; }
+
+#parar { background-color: #f44336; color: white; }
+#parar:hover { background-color: #e53935; }
+
+#zerar { background-color: #2196f3; color: white; }
+#zerar { background-color: #1e88e5; }
