@@ -7,14 +7,28 @@ body{
     margin: 0;
     background-color: #f0f2f5;
 }
+.cronometro-container{
+    text-align: center;
+    background-color: #4e4e5c;
+    padding: 40px 60px;
+    border-radius: 15px;
+}
 h1{
    font-size: 45px;
+   color: #00b37e;
+   margin-bottom: 30px;
 }
+
 button{
-    cursor: pointer;
+    padding: 12px 25px;
     font-size: 16px;
-    border: grey solid ;
+    border: grey solid ;;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
 }
+   
 #iniciar { background-color: #4caf50; color: white; }
 #iniciar:hover { background-color: #45a049; }
 
