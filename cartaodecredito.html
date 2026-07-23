@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de cartão de crédito interativo</title>
+    <link rel="stylesheet" href="cartaodecredito.css">
+</head>
+<body>
+ <div class="conteiner">
+    <div class="card">
+        <div class="card-front">
+            <div class="card-chip"></div>
+            <div class="card-logo">💳</div>
+            <div class="card-number" id="visual-numero">#### #### #### ####</div>
+            <div class="card-details">
+                <div class="box">
+                    <label>Titular</label>
+                    <span id="visual-nome">NOME DO TITULAR</span>
+                </div>
+                    <div class="box">
+                    <label>Validade</label>
+                    <span id="visual-validade">MM/AA</span>
+                </div>
+            </div>
+        </div>
+    </div>
+<form class="form-container">
+    <div class="input-box">
+        <label>Número do cartão</label>
+        <input type="text" maxlength =19 id="input-numero" placeholder="0000 0000 0000 0000">
+    </div>
+    <div class="input-box">
+        <label>Nome do Titular</label>
+        <input type="text" placeholder="Nome impresso no cartão" id="input-nome">
+    </div>
+    <div class="input-box">
+        <label>Validade (MM/AA)</label>
+        <input type="text" id="input-validade" maxlength="5" placeholder="MM/AA">
+    </div>
+</form>     
+ </div>   
+<script src="cartaodecredito.js"></script>   
+</body>
+</html>

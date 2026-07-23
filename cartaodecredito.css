@@ -1,0 +1,91 @@
+body{
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 900px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 450px;
+}
+.card {
+    perspective: 1000px;
+}
+.card-front {
+    width: 350px;
+    height: 210px;
+    background: linear-gradient(15deg,#1f1c2c, #928dab);
+    border-radius: 20px;
+    padding: 25px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-logo {
+    font-size: 30px;
+    align-self: flex-end;
+}
+
+.card-chip {
+    width: 45px;
+    height: 35px;
+    background: linear-gradient(135deg, #ffe259 0%, #ffa751 100%);
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.card-number{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    word-spacing: 5px;    
+}
+.card-details{
+    display: flex;
+    justify-content: space-between;
+}
+.card-details .box{
+    display: flex;
+    flex-direction: column;
+}
+.card-details label {
+    font-size: 10px;
+    opacity: 0.7;
+}
+.card-details span {
+    font-size: 16px;
+    font-weight: bold;
+}
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0,0.1);
+    width: 100%;
+}
+.input-box {
+    margin-bottom: 15px;
+}
+.input-box label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+.input-box input:focus {
+    border-color: #928dab;
+}
