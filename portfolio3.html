@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Bryan Henry, desenvolvedor Front-end. Projetos em HTML, CSS e JavaScript.">
+    <title>Bryan Henry | Portfólio</title>
+    <link rel="stylesheet" href="portfolio3.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <a href="#inicio" class="logo-link"><img src="ChatGPT Image 20 de ago. de 2026, 08_13_50.png" alt="logo"></a>
+        </div>
+
+        <nav class="nav">
+            <ul class="nav-ul">
+                <li><a href="#inicio" class="nav-link">Início</a></li>
+                <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+                <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li><a href="#contato" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+
+        <a href="#contato" class="btn-contato">Contato</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="hero">
+            <h1><span id="typed"></span><span class="cursor">|</span></h1>
+        </section>
+
+        <section id="sobre" class="sobre reveal">
+            <h2>Sobre Mim</h2>
+            <p>
+                Olá! Meu nome é Bryan Henry e tenho 16 anos. Sou estudante do ensino médio e
+                desenvolvedor Front-end há 6 meses, apaixonado por tecnologia e criação de
+                interfaces modernas e responsivas.
+            </p>
+        </section>
+
+        <section id="habilidades" class="habilidade reveal">
+            <h2>Habilidades</h2>
+
+            <div class="skills-list">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>HTML5</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--nivel: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>CSS3</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--nivel: 75%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>JavaScript</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--nivel: 50%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Git/GitHub</span>
+                        <span>55%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--nivel: 55%;"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span>Inglês (Nível B1)</span>
+                        <span>65%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" style="--nivel: 65%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos reveal">
+            <h2>Projetos</h2>
+            <div class="projetos-container">
+
+                <div class="projeto-card">
+                    <img src="projet.png" alt="Imagem do projeto 1">
+                    <div class="projeto-info">
+                        <h3>Projeto conversor</h3>
+                        <p>
+                            Este é um projeto desenvolvido utilizando HTML, CSS e JS
+                            com foco em criar uma maneira simples de realizar conversão
+                            do real para as principais moedas.
+                        </p>
+                        <a href="#" class="btn-projeto" target="_blank" rel="noopener">Ver projeto</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="Captura de tela 2026-08-27 091038.png" alt="Imagem do projeto 2">
+                    <div class="projeto-info">
+                        <h3>Landing Page</h3>
+                        <p>
+                            Landing page desenvolvida com HTML e CSS, focando em
+                            mostrar o uso dos dois na construção de páginas.
+                        </p>
+                        <a href="#" class="btn-projeto" target="_blank" rel="noopener">Ver projeto</a>
+                    </div>
+                </div>
+
+                <div class="projeto-card">
+                    <img src="Captura de tela 2026-08-27 083359.png" alt="Imagem do projeto 3">
+                    <div class="projeto-info">
+                        <h3>Projeto JavaScript</h3>
+                        <p>
+                            Projeto desenvolvido para praticar JavaScript,
+                            adicionando funcionalidades e interações à página.
+                        </p>
+                        <a href="#" class="btn-projeto" target="_blank" rel="noopener">Ver projeto</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contato" class="contato reveal">
+            <h2>Contato</h2>
+            <p class="contato-texto">Quer trocar uma ideia, tirar uma dúvida ou falar sobre uma oportunidade? Me chama em um dos canais abaixo.</p>
+
+            <div class="contato-links">
+                <a href="https://github.com/Bryanhenryy" target="_blank" rel="noopener" class="contato-card">
+                    <span class="contato-icone">🐙</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://linkedin.com/in/bryanhenry" target="_blank" rel="noopener" class="contato-card">
+                    <span class="contato-icone">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="mailto:gustavoworksminds@gmail.com" class="contato-card">
+                    <span class="contato-icone">✉️</span>
+                    <span>E-mail</span>
+                </a>
+                <a href="https://wa.me/55 2799203-8586" target="_blank" rel="noopener" class="contato-card">
+                    <span class="contato-icone">💬</span>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+        <p>&copy; 2026 Bryan Henry. Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="voltarTopo" class="voltar-topo" aria-label="Voltar ao topo">↑</button>
+
+    <script src="portfolio3.js"></script>
+</body>
+</html>
