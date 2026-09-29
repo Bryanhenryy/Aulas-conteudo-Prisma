@@ -1,13 +1,14 @@
-function converteTemperatura(celsius){
-    let fahrenheit = (celsius * 9 / 5 ) + 32
-    let kelvin = celsius+ 273.15
-    console.log(' Temperatura ' + celsius + ' C é igual a ' + fahrenheit + ' f e ' + kelvin + ' K ')
-    return[fahrenheit,kelvin]
- }
- 
-let temp = converteTemperatura(25)
- converteTemperatura(60)
- converteTemperatura(10)
- converteTemperatura(40)
+let dataUser = {
+    name: "Bryan",
+    email: "bryan@email.com",
+    password: "123",
+}
 
- console.log(temp)
+function user(e){
+    e.preventDefault();
+    let storage = JSON.stringify(dataUser);
+    console.log(storage);
+    return localStorage.setItem("dataUser", storage);
+}
+
+addEventListener("submit", user);
